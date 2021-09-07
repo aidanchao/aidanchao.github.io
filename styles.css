@@ -1,0 +1,33 @@
+html {
+    text-align: center;
+}
+
+body {
+    background-color: #FBE8A6;
+}
+
+ul {
+    text-align: center;
+    list-style: inside;
+}
+
+a {
+    color: #303C6C
+}
+
+.button {
+    background-color: #D2FDFF;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 28px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #B4DFE5
+}
+
+#student-buttons {
+    top: 10;
+}
