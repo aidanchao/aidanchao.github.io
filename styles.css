@@ -1,9 +1,14 @@
 html {
     text-align: center;
+    font-family: tisa;
 }
 
 body {
     background-color: #FBE8A6;
+}
+
+h1 {
+    font-size: 250%;
 }
 
 ul {
@@ -30,4 +35,9 @@ a {
 
 #student-buttons {
     top: 10;
+}
+
+@font-face {
+    font-family: tisa;
+    src: url("fonts/TisaSansPro-Black.ttf") format("truetype");
 }
