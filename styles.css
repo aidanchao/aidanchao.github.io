@@ -14,6 +14,12 @@ h1 {
 ul {
     text-align: center;
     list-style: inside;
+    font-size: 140%;
+}
+
+nav {
+    background: #F4976C;
+    padding: 17px;
 }
 
 a {
@@ -27,10 +33,23 @@ a {
     padding: 12px 28px;
     display: inline-block;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 .button:hover {
     background-color: #B4DFE5
+}
+
+#About-me-and-fun-facts {
+    font-size: 175%;
+}
+
+#Web-development-interests {
+    font-size: 175%;
+}
+
+#interest-lists {
+    font-size: 140%;
 }
 
 #student-buttons {
