@@ -10,6 +10,8 @@ function sendMail() {
         .then(function() {
             console.log("SUCCESS");
         });
+        document.getElementById("contact-form").reset();
+        window.alert("Email sent!");
     });
 
 }
