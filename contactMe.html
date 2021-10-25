@@ -11,19 +11,20 @@
     </title>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="js/contactMe.js"></script>
-
     <header id="customheader">
         <h1>AIDAN<span>CHAO</span></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="aboutMe.html">About me</a></li>
                 <li><a href="contactMe.html">Contact me</a></li>
-                <li><a href="contactMe.html">Class links <i class="fas fa-caret-down"></i></a>
-                    <ul class="dropdown-links">
-                        <li><a href ="#">Course Website</a></li>
-                        <li><a href ="#">Next Student</a></li>
-                        <li><a href ="#">Previous Student</a></li>
+                <li><a href="/files/Aidan Chao Resume.pdf">Resume</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Class links</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Course Website</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Next Student</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Previous Student</a></li>
                     </ul>
                 </li>
             </ul>
@@ -32,35 +33,36 @@
 </head>
 
 <body onload="sendMail();">
-    <div id="contactMe-form">
+    <div id="contactMe-form" class="">
         <div class="email-form">
             <form id="contact-form">
                 <div class="fname">
-                    <label for="user_fname">First Name</label>
+                    <br>
+                    <label for="user_fname" class="text-info form-title">First Name</label>
                     <div class="fname-input">
                         <input type="text" id="user_fname" name="user_fname" placeholder="Your first name">
                     </div>
                 </div>
                 <div class="lname">
-                    <label for="user_lname">Last Name</label>
+                    <label for="user_lname" class="text-info form-title">Last Name</label>
                     <div class="lname-input">
                         <input type="text" id="user_lname" name="user_lname" placeholder="Your last name">
                     </div>
                 </div>
                 <div class="email">
-                    <label for="user_email">Your Email</label>
+                    <label for="user_email" class="text-info form-title">Your Email</label>
                     <div class="email-input">
                         <input type="text" id="user_email" name="user_email" placeholder="Your email"> 
                     </div>
                 </div>
                 <div class="phone">
-                    <label for="user_phone">Your Phone Number</label>
+                    <label for="user_phone" class="text-info form-title">Your Phone Number</label>
                     <div class="phone-input">
                         <input type="text" id="user_phone" name="user_phone" placeholder="Your phone number">
                     </div>
                 </div>
                 <div class="message">
-                    <label for="user_message">Your Message</label>
+                    <label for="user_message" class="text-info form-title">Your Message</label>
                     <div class="message-input">
                         <textarea id="user_message" name="user_message" cols="100" rows="10" placeholder="Enter your message"></textarea>
                     </div>
