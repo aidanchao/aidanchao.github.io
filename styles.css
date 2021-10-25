@@ -1,32 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
 html {
-    text-align: center;
     font-family: tisa;
 }
 
-body {
-    background-color: #d8e9f3;
+#customheader {
+    width: 100%;
+    height: 70px;
+    background-color: #0dcaf0;
+}
+
+#footer-name {
+    font-family: tisa;
+}
+
+#project-header {
+    font-family: tisa;
+    font-size: 200%;
+}
+
+.fname {
+    text-align:center;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+.project-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+.my-title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-pic {
+    border-radius: 10px;
+    width: 40%;
+    margin: 5px;
+}
+
+.project-pic {
+    border-radius: 10px;
+    width: 200%;
 }
 
 h1 {
+    position: absolute;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: tisa;
+}
+
+h2 {
+    font-family: tisa;
     font-size: 250%;
 }
 
-ul {
-    text-align: center;
-    list-style: inside;
-    font-size: 140%;
+li {
+    display: inline-block;;
+    padding: 15px 30px;
 }
 
-nav {
-    background: #8dbdd8;
-    padding: 17px;
-    margin-bottom: 50px;
-    border-radius: 10px;
+ul {
+    width: auto;
+    float: right;
+    margin-top: 8px;
 }
 
 a {
-    color: #303C6C
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto Slab", serif;
 }
+
+a:hover {
+    color: #000000;
+    transition: 0.5s;
+}
+
+span {
+    color: #ffffff;
+}
+
+
+/* ul li:hover > ul {
+    display: block;
+    list-style: none;
+} */
+    
 
 input[type=text]{
     width: 50%;
@@ -82,3 +159,4 @@ input[type=submit] {
     font-family: tisa;
     src: url("fonts/TisaSansPro-Black.ttf") format("truetype");
 }
+  
