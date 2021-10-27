@@ -2,6 +2,26 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JN49MSPP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K8JN49MSPP');
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -14,12 +34,12 @@
         <h1>AIDAN<span>CHAO</span></h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactMe.html">Contact me</a></li>
-                <li><a href="/files/Aidan Chao Resume.pdf">Resume</a></li>
+                <li><a href="index.html" class="navbar-button">Home</a></li>
+                <li><a href="contactMe.html" class="navbar-button">Contact me</a></li>
+                <li><a href="/files/Aidan Chao Resume.pdf" class="navbar-button">Resume</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Class links</a>
+                    <a class="dropdown-toggle navbar-button" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Class links</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Course Website</a></li>
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Next Student</a></li>
@@ -32,6 +52,19 @@
 </head>
 
 <body>
+
+    <!-- <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div> -->
 
     <div class="bg-white">
         <br> <br>
@@ -62,7 +95,9 @@
     </div>
 
     <div class="row text-center ml-50 pt-3">
-        <p class="aboutme-text">Hi! My name is Aidan and I am a junior CS student at the University of Delaware with a custom concentration in software engineering. My primary languages are Java and C but I am just getting into HTML/CSS and web development. I have interests in web and application development.</p>
+        <p class="aboutme-text">Hi! My name is Aidan and I am a junior CS student at the University of Delaware with a
+            custom concentration in software engineering. My primary languages are Java and C but I am just getting into
+            HTML/CSS and web development. I have interests in web and application development.</p>
     </div>
 
     <div class="bg-white">
@@ -78,22 +113,29 @@
             <div class="row text-center text-md-left">
                 <div class="col-md-3 col-lg-3 col-x1-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="project-header">Garden Builder</h5>
-                    <p>The Garden Builder is an app developed by a team of 4 using Java and the JavaFX library. Users are able to create a full, scaleable blueprint of a garden with a budget, garden conditions, plants, and leps supported.
-                    </p>   
+                    <p>The Garden Builder is an app developed by a team of 4 using Java and the JavaFX library. Users
+                        are able to create a full, scaleable blueprint of a garden with a budget, garden conditions,
+                        plants, and leps supported.
+                    </p>
                     <div class="project-pic-container">
                         <img src="/img/garden.png" class="project-pic" alt="An image of the Garden Builder app">
                     </div>
                     <br>
-                    <a class="view-code-button" href="https://github.com/CISC275-S2021/project-team-10-2" target="_blank" role="button">View GitHub Repository</a>
+                    <a class="view-code-button" href="https://github.com/CISC275-S2021/project-team-10-2"
+                        target="_blank" role="button">View GitHub Repository</a>
                 </div>
                 <div class="col-md-3 col-lg-3 col-x1-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="project-header">Fridge Daddy</h5>
-                    <p>Fridge Daddy is a work in progress app developed by a team of 5 using HTML, CSS, JavaScript, and a variety of frameworks. Users are able to input ingredients they have and the app will generate recipes with select ingredients. Users are also able to create cookbooks and add recipes to them.</p>
+                    <p>Fridge Daddy is a work in progress app developed by a team of 5 using HTML, CSS, JavaScript, and
+                        a variety of frameworks. Users are able to input ingredients they have and the app will generate
+                        recipes with select ingredients. Users are also able to create cookbooks and add recipes to
+                        them.</p>
                     <div class="project-pic-container">
                         <img src="/img/fridgedaddy.png" class="project-pic" alt="An image of the Fridge Daddy app">
                     </div>
                     <br>
-                    <a class="view-code-button" href="https://github.com/MrPinkPigg/CISC474-FridgeDaddy" target="_blank" role="button">View GitHub Repository</a>
+                    <a class="view-code-button" href="https://github.com/MrPinkPigg/CISC474-FridgeDaddy" target="_blank"
+                        role="button">View GitHub Repository</a>
                 </div>
             </div>
         </div>

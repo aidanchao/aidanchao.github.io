@@ -105,9 +105,14 @@ a {
     font-family: tisa;
 }
 
+.navbar-button {
+    font-family: tisa;
+}
+
 .view-code-button:hover {
     background-color: #20adc9;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 a:hover {
@@ -168,6 +173,7 @@ input[type=submit] {
 
 .form-title {
     font-family: tisa;
+    color: black;
     font-size: 120;
 }
 
