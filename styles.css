@@ -12,11 +12,28 @@ html {
     background-color: #0dcaf0;
 }
 
-#footer-name {
+#footer-name-about {
     font-family: tisa;
 }
 
-#project-header {
+#footer-name-languages {
+    font-family: tisa;
+}
+
+#footer-name-frameworks {
+    font-family: tisa;
+}
+
+#footer-name-contact {
+    font-family: tisa;
+}
+
+#project-header1 {
+    font-family: tisa;
+    font-size: 200%;
+}
+
+#project-header2 {
     font-family: tisa;
     font-size: 200%;
 }
@@ -107,6 +124,7 @@ a {
 
 .navbar-button {
     font-family: tisa;
+    text-decoration: none;
 }
 
 .view-code-button:hover {
@@ -118,6 +136,7 @@ a {
 a:hover {
     color: #000000;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 span {
@@ -169,6 +188,10 @@ input[type=submit] {
 
 .button:hover {
     background-color: #20adc9;
+}
+
+.dropdown-item {
+    font-family: tisa;
 }
 
 .form-title {

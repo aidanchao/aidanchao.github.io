@@ -12,7 +12,7 @@ function sendMail() {
                     console.log("SUCCESS");
                 });
             document.getElementById("contact-form").reset();
-            window.alert("Email sent!");
+            window.alert("Email sent! I will get back to you in 24-48 hours.");
         }
         else if (!validateFname()) {
             alert("Your first name cannot be blank!")
