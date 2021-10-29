@@ -216,8 +216,8 @@ input[type=submit] {
     top: 10;
 }
 
-@font-face {
+@font-face {    
     font-family: tisa;
-    src: url("fonts/TisaSansPro-Black.ttf") format("truetype");
+    src: url("/fonts/TisaSansPro-Black.ttf") format("truetype");
 }
   

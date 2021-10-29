@@ -11,9 +11,22 @@
 
         gtag('config', 'G-K8JN49MSPP');
     </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
     <meta charset="UTF-8">
     <script src="contactMe.js"></script>
     <title>
@@ -21,28 +34,33 @@
     </title>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="js/contactMe.js"></script>
-    <header id="customheader">
-        <h1>AIDAN<span>CHAO</span></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactMe.html">Contact me</a></li>
-                <li><a href="/files/Aidan Chao Resume.pdf">Resume</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Class links</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Course Website</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Next Student</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Previous Student</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
 </head>
 
 <body onload="sendMail();">
+
+    <!-- Header -->
+    <div id="customheader">
+        <h1 class="typewriter">AIDAN<span>CHAO</span></h1>
+        <nav class="navbar justify-content-end">
+            <ul>
+                <li><a href="index.html" class="navbar-button">Home</a></li>
+                <li><a href="contactMe.html" class="navbar-button">Contact me</a></li>
+                <li><a href="/files/Aidan-Chao-Resume.pdf" class="navbar-button">Resume</a></li>
+                <li class="dropdown show">
+                        <a class="dropdown-toggle navbar-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Class Links
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="https://gizmo-udel.github.io">Previous Student</a>
+                          <a class="dropdown-item" href="https://desdaile.github.io">Next Student</a>
+                          <a class="dropdown-item" href="https://www.eecis.udel.edu/~mlm/teaching/Advanced-Web-Technologies/">Course Website</a>
+                        </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Contact form -->
     <div id="contactMe-form">
         <div class="email-form">
             <form id="contact-form">
@@ -83,11 +101,12 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
                 <div class="col-md-3 col-lg-3 col-x1-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="footer-name">About</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="footer-name-about">About</h5>
                     <p>A current junior year CS student with a custom concentration in Software Engineering. I am
                         currently looking for internship opportunities for Summer 2022. Feel free to reach out and
                         connect with me via
@@ -95,14 +114,14 @@
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="footer-name">Languages</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="footer-name-languages">Languages</h5>
                     <p>Java, Python, C, C++, HTML/CSS</p>
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="footer-name">Frameworks</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="footer-name-frameworks">Frameworks</h5>
                     <p>Bootstrap</p>
                 </div>
 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="footer-name">Contact</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="footer-name-contact">Contact</h5>
                     <p><i class="fas fa-envelope mr-3"></i> achao@udel.edu</p>
                     <p><i class="fas fa-phone mr-3"></i> 862-222-1097</p>
                 </div>
@@ -135,11 +154,8 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
 </body>
-
-
 
 </html>
